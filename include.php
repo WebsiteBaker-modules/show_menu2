@@ -582,7 +582,10 @@ function show_menu2(
                 if(version_compare(WB_VERSION, '2.7', '>=')) { // WB >= 2.7
                     // 1. hidden pages aren't shown unless they are on the current page
                     if ($page['visibility'] == 'hidden') {
-                        $page['sm2_hide'] = true;
+                        if (($flags & SM2_SHOWHIDDEN)==false) {
+                            // show hidden pages if SHOWHIDDEN flag supplied
+                            $page['sm2_hide'] = true;
+                        }
                     }
 
                     // 2. all pages with no active sections (unless it is the top page) are ignored

@@ -17,9 +17,9 @@
  */
 
 $module_directory = 'show_menu2';
-$module_name = 'show_menu2 v4.9.10';
+$module_name = 'show_menu2 v4.9.11';
 $module_function = 'snippet';
-$module_version = '4.9.10';
+$module_version = '4.9.11';
 $module_platform = '2.8.3 SP7';
 $module_author = 'Brodie Thiesfield';
 $module_license = 'GNU General Public License';
